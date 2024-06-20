@@ -30,7 +30,7 @@
                             echo "<tr><td><span>Nota:$reg->nota/10</span><br>$reg->descricao</td></tr>";
                             echo "<tr><td>Adm</td></tr>";
                         }else{
-                            echo "<tr><td>Usuário burro detected!</td></tr>";
+                            echo "<tr><td>Usuário bobinho detected!</td></tr>";
                         }  
                     }
                     ?>
