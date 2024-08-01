@@ -1,0 +1,23 @@
+.mensagem {
+    margin: 40px 0 40px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #b6b6b6;
+    font-weight: 600;
+}
+
+.mensagem img {
+    width: 24px;
+}
+
+.sucesso {
+    background-color: rgba(153, 240, 153, 0.7);
+}
+.aviso {
+    background-color: rgba(223, 223, 125, 0.7);
+}
+.erro {
+    background-color: rgba(232, 93, 93, 0.7);
+}
