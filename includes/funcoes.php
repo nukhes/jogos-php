@@ -11,4 +11,24 @@
 
         return $caminho;
     }
+
+    class Mensagem {
+        static function voltar() {
+            $resp = "<a class='voltar mensagem' href='./index.php'><img src='./icones/lucide/arrow-left.png' alt='Voltar/>Voltar</a>";
+            return $resp;
+        }
+        static function sucesso($m) {
+            $resp = "<div class='sucesso mensagem'><img src='./icones/lucide/check.png' alt='Sucesso'/> $m</div>";
+            return $resp;
+        }
+        static function aviso($m) {
+            $resp = "<div class='aviso mensagem'><img src='./icones/lucide/triangle-alert.png' alt='Aviso'/> $m</div>";
+            return $resp;
+        }
+        static function erro($m) {
+            $resp = "<div class='erro mensagem'><img src='./icones/lucide/circle-x.png' alt='Erro'/> $m</div>";
+            return $resp;
+        }
+    }
+
 ?>
