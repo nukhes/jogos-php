@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Jogos</title>
     <link rel="stylesheet" href="./estilos/estilo.css">
+    <link rel="stylesheet" href="./estilos/tabela.css">
 </head>
 <body>
     <?php 
@@ -27,8 +28,8 @@
                             $reg = $busca->fetch_object();
                             echo "<tr><td rowspan='3'><img src='fotos/$reg->capa'/></td></tr>";
                             echo "<tr><td><h2>$reg->nome</h2></td></tr>";
-                            echo "<tr><td><span>Nota:$reg->nota/10</span><br>$reg->descricao</td></tr>";
-                            echo "<tr><td>Adm</td></tr>";
+                            echo "<tr><td><span class='nota'>Nota: $reg->nota/10</span><p>$reg->descricao</p></td></tr>";
+                            echo "<tr><td><span class='status'>Admin</span></td></tr>";
                         }else{
                             echo "<tr><td>Usuário bobinho detected!</td></tr>";
                         }  
@@ -37,4 +38,5 @@
           </table>
         </div>              
     </body>
+
 </html>
