@@ -106,3 +106,4 @@ alter table generos modify cod int(11) auto_increment primary key;
 -- update jogos set ativo=true where cod= 1;
 
 
+select * from jogos 

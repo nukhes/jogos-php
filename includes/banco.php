@@ -3,7 +3,7 @@
     Instância do banco de dados.
     $banco = new mysqli(host, usuario, senha, banco);
     */
-    $banco = new mysqli("localhost", "root", "", "bd1_games");
+    $banco = new mysqli("127.0.0.1", "root", "", "bd1_games");
 
     // Caso o banco caia
     if ($banco->connect_errno) {
