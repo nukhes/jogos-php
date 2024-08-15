@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    
+    <link rel="stylesheet" href="./estilos/global.css">
+    <link rel="stylesheet" href="./estilos/mensagens.css">
+
+    <style>
+        body {
+            padding: 40px 20vw 0 20vw;
+        }
+    </style>
+
 </head>
 <body>
     <?php
@@ -30,7 +38,7 @@
                 if (!$busca) {
                     echo Mensagem::erro('Falha ao acessar o banco!');
                 } else {
-                    if ($busca->num_rows>0) { // Caso a nossa busca tenha retornado algo
+                    if ($busca->num_rows>0) { // Caso usuário exista
 
                         $reg = $busca->fetch_object();
                         
@@ -39,16 +47,17 @@
                             $_SESSION['user'] = $reg->usuario;
                             $_SESSION['nome'] = $reg->nome;
                             $_SESSION['tipo'] = $reg->tipo;
-                        } else if ($reg->usuario != $usuario.tex) {
-                            echo Mensagem::erro('Nome inválido!');
-                        } 
+                        }
                         else {
                             echo Mensagem::erro('Senha inválida!');
                         }
-
+                    } else {
+                        echo Mensagem::erro('Nome inválido!');
                     }
                 }
             }
         ?>
+
+        
 </body>
 </html>

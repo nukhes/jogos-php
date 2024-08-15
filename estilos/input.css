@@ -1,10 +1,13 @@
 input {
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     outline: 1px solid rgb(26, 26, 26);
     border: 0;
 }
 
+input[type="submit"],input[type="button"] {
+    cursor: pointer;
+}
 input:focus {
     outline: 4px solid rgb(122, 4, 176);
 }
