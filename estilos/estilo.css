@@ -4,14 +4,6 @@
     user-select: none; /* Standard syntax */
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    text-align: justify;
-}
-
 div#corpo {
     max-width: 1200px;
     height: 100%;
