@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./estilos/mensagens.css">
     <link rel="stylesheet" href="./estilos/input.css">
     <link rel="stylesheet" href="./estilos/tabela.css">
+    <link rel="stylesheet" href="./estilos/global.css">
 </head>
 <body>
     <?php
     require_once "includes/banco.php";
     require_once "includes/funcoes.php";
+    require_once "includes/login.php";
     $ordem =$_GET['o'] ?? "n";
     $chave = $_GET['c'] ?? "";
     ?>
