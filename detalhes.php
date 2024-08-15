@@ -6,6 +6,7 @@
     <title>Listagem de Jogos</title>
     <link rel="stylesheet" href="./estilos/estilo.css">
     <link rel="stylesheet" href="./estilos/tabela.css">
+    <link rel="stylesheet" href="./estilos/global.css">
 </head>
 <body>
     <?php 
