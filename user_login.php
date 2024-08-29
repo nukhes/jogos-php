@@ -23,6 +23,9 @@
 
     <div id="corpo">
         <?php
+
+            include("user_login_form.php");
+
             $usuario = $_POST['usuario'] ?? null;
             $senha = $_POST['senha'] ?? null;
 
@@ -47,6 +50,8 @@
                             $_SESSION['user'] = $reg->usuario;
                             $_SESSION['nome'] = $reg->nome;
                             $_SESSION['tipo'] = $reg->tipo;
+                            header('Location:index.php');
+                            exit();
                         }
                         else {
                             echo Mensagem::erro('Senha inválida!');
