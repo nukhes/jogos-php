@@ -22,8 +22,6 @@
     <div id="corpo">
         <?php include_once "topo.php";?>
 
-        <?php echo Mensagem::sucesso("Consulta feita com sucesso") ?>
-
         <h2>Escolha seu jogo</h2>
 
 
