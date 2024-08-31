@@ -21,10 +21,7 @@
  
     <div id="corpo">
         <?php include_once "topo.php";?>
-
         <h2>Escolha seu jogo</h2>
-
-
         <?php include_once "./home/filtrar-jogos.php"; ?>
         <?php include_once "./home/listagem-jogos.php"; ?>
         <?php include_once "rodape.php"; ?>
