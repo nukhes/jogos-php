@@ -13,8 +13,8 @@
     }
 
     class Mensagem {
-        static function voltar() {
-            $resp = "<a class='voltar mensagem' href='./index.php'><img src='./icones/lucide/arrow-left.png' alt='Voltar/>Voltar</a>";
+        static function voltar() { 
+            $resp = "<a class='voltar mensagem' style='text-decoration: none; color: black;' href='./index.php'><img src='./icones/lucide/arrow-left.png' alt='Voltar'/>Voltar</a>";
             return $resp;
         }
         static function sucesso($m) {
@@ -22,7 +22,7 @@
             return $resp;
         }
         static function aviso($m) {
-            $resp = "<div class='aviso mensagem'><img src='./icones/lucide/triangle-alert.png' alt='Aviso'/> $m</div>";
+            $resp = "<div class='aviso mensagem'><img src='./icones/lucide/triangle-alert.png' alt='Aviso'/> <div>$m</div> </div>";
             return $resp;
         }
         static function erro($m) {
