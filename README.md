@@ -1,1 +1,1 @@
-Este é um projeto para o curso de Desenvolvimento de Sistemas (ETEC), um site de jogos.
+Este é um projeto para o curso de Desenvolvimento de Sistemas (ETEC), ainda não está completo
