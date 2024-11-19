@@ -24,7 +24,6 @@
     <div id="corpo">
         <?php
 
-            include("user_login_form.php");
 
             $usuario = $_POST['usuario'] ?? null;
             $senha = $_POST['senha'] ?? null;
