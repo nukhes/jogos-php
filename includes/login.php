@@ -1,6 +1,8 @@
 <?php    
 
-session_start();
+if (!is_logado()) {
+    session_start();
+}
 
 if(!isset($_SESSION['user'])){
     $_SESSION['user']="";
@@ -26,4 +28,17 @@ function gerarHash($senha){
 function testarHash($senha, $hash){
     $ok = password_verify(cripto($senha),$hash);
     return $ok;
+}
+
+function logout() {
+    unset($_SESSION['user']);
+    unset($_SESSION['nome']);
+    unset($_SESSION['tipo']);
+}
+
+function is_logado() {
+    if (empty($_SESSION['user'])) {
+        return false;
+    }
+    return true;
 }
