@@ -1,12 +1,12 @@
 <header>
-    <h1 id="logo">Bluezão Jogos</h1>
+    <h1 id="logo">DSJogos</h1>
     <?php
         if (empty($_SESSION['user'])) {
             echo "<a href='./user_login_form.php'><span style='font-size: 12pt;'>Entrar</span></a>";
         } else {
             echo "
             <div style='display: flex; align-items: center; gap: 20px;'>
-                <span>Olá <strong>" . $_SESSION['nome'] . "</strong> </span>
+                <span>Olá <strong>" . "<a href='./user_edit.php'>" . $_SESSION['nome'] . "</a>" . "</strong> </span>
                 <form method='post'>
                     <button type='submit' name='logout'>Sair</button>
                 </form>
