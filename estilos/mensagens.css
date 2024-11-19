@@ -4,9 +4,12 @@
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: #b6b6b6;
+    text-decoration: none;
+    text-align: right;
+    font-display: ;
     font-weight: 600;
 }
+
 
 .mensagem img {
     width: 24px;
